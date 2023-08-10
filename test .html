@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <title>Image Gallery</title>
+</head>
+<body>
+  <div class="image-container">
+    <img id="image" src="default-image.jpg" alt="Image">
+  </div>
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.image-container {
+  position: relative;
+}
+
+#image {
+  width: 300px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#image:hover {
+  transform: scale(1.1);
+}
+  </style>
+  <script>
+    $(document).ready(function() {
+  // You can add more images and titles as needed
+  const imageList = [
+    { src: 'image1.jpg', alt: 'Image 1' },
+    { src: 'image2.jpg', alt: 'Image 2' },
+    { src: 'image3.jpg', alt: 'Image 3' }
+  ];
+
+  const imageElement = $('#image');
+
+  let currentImageIndex = 0;
+
+  imageElement.attr('src', imageList[currentImageIndex].src);
+  imageElement.attr('alt', imageList[currentImageIndex].alt);
+
+  imageElement.on('mouseenter', function() {
+    currentImageIndex = (currentImageIndex + 1) % imageList.length;
+    imageElement.attr('src', imageList[currentImageIndex].src);
+    imageElement.attr('alt', imageList[currentImageIndex].alt);
+  });
+});
+  </script>
+</body>
+</html>

@@ -6,10 +6,10 @@
     <title>
         Kylie Cosmetic
     </title>
-    <!-- GOOGLE FONT
+    <!-- GOOGLE FONT-->
     <link rel="preconnect" href="https://fontsgeek.com/fonts/utah-condensed-bold">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-     -->
+     
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- GLIDEJS -->
@@ -18,8 +18,81 @@
     <link rel="stylesheet" type="text/css" href="Make up .css">
     <link rel="stylesheet" href="Make up .css">
     <link rel="stylesheet" href="Make up .js">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+      }
+      
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 50%; 
+        min-height: 50%;
+      }
+      
+      .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 50%;
+        padding: 20px;
+      }
+      
+      #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="c:\Users\hibaz\Desktop\Pair Project of Girls Makeup Store\photos make up\4d3c0b2e3e7f4415b5d922047edf925e.HD-720p-4.5Mbps-12415729.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+
     <!-- NAV -->
     <div class="nav-wrapper">
         <div class="container-fluid">

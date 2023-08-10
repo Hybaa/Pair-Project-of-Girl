@@ -1,0 +1,28 @@
+
+$ git remote add RBK https://github.com/RBK-TN/RBKTN-So-01-23-warmups.git
+
+Hybaa@DESKTOP-N8L6NUC MINGW64 ~/Desktop/RBK/RBKTN-So-01-23-warmups (main)
+$ git remote -v
+RBK     https://github.com/RBK-TN/RBKTN-So-01-23-warmups.git (fetch)
+RBK     https://github.com/RBK-TN/RBKTN-So-01-23-warmups.git (push)
+origin  https://github.com/Hybaa/RBKTN-So-01-23-warmups.git (fetch)
+origin  https://github.com/Hybaa/RBKTN-So-01-23-warmups.git (push)
+
+Hybaa@DESKTOP-N8L6NUC MINGW64 ~/Desktop/RBK/RBKTN-So-01-23-warmups (main)
+$ git pull RBK main
+From https://github.com/RBK-TN/RBKTN-So-01-23-warmups
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> RBK/main
+Already up to date.
+
+Hybaa@DESKTOP-N8L6NUC MINGW64 ~/Desktop/RBK/RBKTN-So-01-23-warmups (main)
+$ ^C
+
+Hybaa@DESKTOP-N8L6NUC MINGW64 ~/Desktop/RBK/RBKTN-So-01-23-warmups (main)
+$
+function lastElement(array) {
+   return array[array.length-1]
+}
+undefined
+lastElement([1,2,3,4])
+4
