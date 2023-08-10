@@ -1,0 +1,123 @@
+/*#B3848F
+#E7DAE2
+*/
+@font-face {
+    font-family: 'Utah Condensed Bold'; 
+    src: url("Utah Condensed Bold\Utah Condensed Bold.ttf") format('c:\Users\hibaz\AppData\Local\Temp\Rar$DRa17420.43223\Utah Condensed Bold\Utah Condensed Bold.ttf'); /* Replace with the actual path to your font file */
+  }
+
+  
+  body {
+    font-family: 'Utah Condensed Bold', sans-serif; /* Use the name you defined in @font-face */
+  }
+:root {
+    --main-color: #C4C4C4;
+    --body-bg: #B3848F;
+    --second-bg: #f5f5f5;
+    --text-color: #757575;
+    --text-white: #ffffff;
+    --text-gray: #868686;
+    --main-hover: #9b2d25;
+
+    --section-space: 100px;
+    --nav-size: 70px;
+    --logo-size: 45px;
+    --banner-height: 400px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Utah Condensed Bold", sans-serif;
+    background-color: var(--body-bg);
+    padding-top: var(--nav-size);
+    overflow-x: hidden;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.container-fluid {
+    padding: 0 30px;
+}
+
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--body-bg);
+}
+
+.nav {
+    position: relative;
+    height: var(--nav-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: var(--logo-size);
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li ~ li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.nav-menu li a:hover {
+    color: var(--main-color);
+}
+
+.menu-main {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    height: var(--nav-size);
+    pointer-events: none;
+}
+
+.menu-main li a {
+    pointer-events: visible;
+}
+
+.hero-section {
+    height: calc(100vh - var(--nav-size));
+}
+
+.hero-section .row,
+.hero-section .col-4,
+.hero-section .col-8 {
+    height: 100%;
+}

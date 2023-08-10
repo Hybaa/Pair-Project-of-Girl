@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Kylie Cosmetic
+    </title>
+    <!-- GOOGLE FONT
+    <link rel="preconnect" href="https://fontsgeek.com/fonts/utah-condensed-bold">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+     -->
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- GLIDEJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <!-- APP CSS -->
+    <link rel="stylesheet" type="text/css" href="Make up .css">
+    <link rel="stylesheet" href="Make up .css">
+    <link rel="stylesheet" href="Make up .js">
+</head>
+<body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container-fluid">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <ul class="nav-menu menu-main">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">about us</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#"><i class='bx bx-search'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bx-shopping-bag'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bx-user'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <div class="row">
+            <div class="col-4">
+                <div class="slide-info-wrapper">
+                    <!-- SLIDE INFO -->
+                    <div class="slide-info active">
+                        <div class="slide-name">
+                            <h3 class="top-down delay-2">
+                                Louboutin Velvet Matte
+                            </h3>
+                        </div>
+                        <div class="slide-description">
+                            <p class="top-down delay-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi adipisci vitae iusto atque quo optio voluptas corrupti, maxime totam facilis veniam rerum sapiente dolor. Deserunt amet quisquam dignissimos obcaecati mollitia.
+                            </p>
+                        </div>
+                        <div class="slide-action">
+                            <a href="#" class="btn btn-lg top-down delay-6">
+                                shop now
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END SLIDE INFO -->
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit laboriosam hic 
+                        voluptatibus harum assumenda, quidem quasi dolorem velit 
+                        µofficia sequi libero facere et adipisci fugit eum in, dolores accusantium?</p>
+                    <!-- SLIDE INFO -->
+                    <form action="" method="get" class="form">
+                        <div class="form__field">
+                          <label for="example-text-input">Text Input</label>
+                          <input id="example-text-input" type="text" placeholder="Text Here"/>
+                        </div>
+                        <div class="form__field">
+                          <label for="example-disabled-input">Disabled Input</label>
+                          <input id="example-disabled-input" type="text" placeholder="Text Here" disabled/>
+                        </div>
+                        <div class="form__field">
+                          <label for="example-email-input">Email Input</label>
+                          <input id="example-email-input" type="email" placeholder="Email Here">
+                        </div>
+                        <div class="form__field">
+                          <label for="example-password-input">Password Input</label>
+                          <input id="example-password-input" type="password" placeholder="Password Here">
+                        </div>
+                        <div class="form__field">
+                          <label for="example-form-control-select">Select</label>
+                          <select id="example-form-control-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div data-vue="design-guide">
+                          <div class="form__field">
+                            <dropdown
+                              label="Color"
+                              :value="{title: 'Red', value: 'red'}"
+                              :options="[
+                                {title: 'Red', value: 'red'},
+                                {title: 'Green', value: 'green'},
+                                {title: 'Blue', value: 'blue'}
+                              ]"
+                              :settings="{
+                                searchable: false,
+                                clearable: false,
+                                clearSearchOnSelect: false,
+                                placeholder: 'Select your color'
+                              }">
+                              <template #selected="{ option }">
+                                <span class="option option--color" :style="`--color:${option.value}`" v-text="option.title"></span>
+                              </template>
+                              <template #options="{ option }">
+                                <span class="option option--color" :style="`--color:${option.value}`" v-text="option.title"></span>
+                              </template>
+                            </dropdown>
+                          </div>
+                          <div class="form__field">
+                            <dropdown
+                              v-if="false"
+                              label="Multi-Color"
+                              v-model="value"
+                              :value="{title: 'Red', value: 'red'}"
+                              :options="[
+                                {title: 'Red', value: 'red'},
+                                {title: 'Green', value: 'green'},
+                                {title: 'Blue', value: 'blue'}
+                              ]"
+                              :settings="{
+                                searchable: false,
+                                multiple: true,
+                                placeholder: 'Select your colors'
+                              }">
+                              <template #selected="{ option }">
+                                <span class="option option--color" :style="`--color:${option.value}`" v-text="option.title"></span>
+                              </template>
+                              <template #options="{ option }">
+                                <span class="option option--color" :style="`--color:${option.value}`" v-text="option.title"></span>
+                              </template>
+                            </dropdown>
+                          </div>
+                        </div>
+                        <div class="form__field">
+                          <label for="example-form-control-textarea1">Example textarea</label>
+                          <textarea id="example-form-control-textarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form__field">
+                          <label for="minimal-text-input">Text Input</label>
+                          <input class="minimal" id="minimal-text-input" type="text" placeholder="Text Here"/>
+                        </div>
+                        <div class="form__field">
+                          <label for="helper-text-input">Helper Input</label>
+                          <input class="minimal" id="helper-text-input" type="text" placeholder="Text Here"/>
+                          <span class="message">Optional Helper Text</span>
+                        </div>
+                        <div class="form__field">
+                          <label for="icon-text-input">Icon Input</label>
+                          <div class="input input--icon">
+                            <input class="minimal" id="icon-text-input" type="text" placeholder="Text Here"/>
+                            <span class="icon icon--chevron-right" aria-hidden="true"></span>
+                          </div>
+                        </div>
+                        <div class="form__field">
+                          <label for="disabled-text-input">Disabled Input</label>
+                          <input class="minimal" id="disabled-text-input" type="text" placeholder="Text Here" disabled/>
+                        </div>
+                        <div class="form__field">
+                          <label for="minimal-email-input">Email Input</label>
+                          <input class="minimal" id="minimal-email-input" type="email" placeholder="Email Here">
+                          <span class="message message--error">Invalid email</span>
+                        </div>
+                        <div class="form__field">
+                          <label for="minimal-password-input">Password Input</label>
+                          <input class="minimal" id="minimal-password-input" type="password" placeholder="Password Here">
+                        </div>
+                        <div class="form__field">
+                          <label>
+                            <input type="checkbox" value="">
+                            Check this out! Example checkbox
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label>
+                            <input type="checkbox" value="" disabled>
+                            Disabled checkbox
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label>
+                            <input type="radio" name="exampleRadios" id="example-radios1" value="option1" checked>
+                            Example Radio Button 1
+                          </label>
+                          <label>
+                            <input type="radio" name="exampleRadios" id="example-radios2" value="option2">
+                            Example Radio Button 2
+                          </label>
+                          <label>
+                            <input type="radio" name="exampleRadios" id="example-radios3" value="option3" disabled>
+                            Disabled Radio Button 3
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <input class="option option--pill" type="radio" name="pillRadios" id="pill-radios1" value="option1" checked>
+                          <label for="pill-radios1">Option 1</label>
+                          <input class="option option--pill" type="radio" name="pillRadios" id="pill-radios2" value="option2">
+                          <label for="pill-radios2">Option 2</label>
+                          <input class="option option--pill" type="radio" name="pillRadios" id="pill-radios3" value="option3" disabled>
+                          <label for="pill-radios3">Option 3</label>
+                        </div>
+                      </form>
+                      <a href="#" role="button">Link</a>
+<a href="#" class="action action--primary" role="button">Button Link</a>
+<button type="button" class="action action--primary">Primary</button>
+<button type="button" class="action action--secondary">Secondary</button>
+<button type="button" class="action action--tertiary">Tertiary</button>
+<button type="button" class="action action--link">Link</button>
+<button type="button" disabled>Disabled</button>
+<button type="submit">Submit</button>
+<input type="button" value="Input">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</body>
+</html>
