@@ -10,54 +10,49 @@
     height: var(--logo-size)
   }
   
-  body {
-    font-family: 'Utah Condensed Bold' /* Use the name you defined in @font-face */
+  
+   /*
+   body {
+    font-family: 'Utah Condensed Bold' /* Use the name you defined in @font-face 
   }
   * {
     box-sizing: border-box;
   }
-  
-  body {
+  #kylielips{
+    
+    background-image: url('c:\Users\hibaz\Desktop\Pair-Project-of-Girl\photos make up\PLP-Imagery_Cosmetics_Lips_Desktop_MCP_opt-2.webp')
+  }
+ 
+ <img id="kylielips" src="c:\Users\hibaz\Desktop\Pair-Project-of-Girl\photos make up\PLP-Imagery_Cosmetics_Lips_Desktop_MCP_opt-2.webp">
+body {
+    background-image: url("c:\Users\hibaz\Desktop\Pair-Project-of-Girl\photos make up\PLP-Imagery_Cosmetics_Lips_Desktop_MCP_opt-2.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50% ;
+  }
+  #kylielips{
+    background-position: center;
+}
+  */
+  body, html {
     margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-  }
-  
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 50%; 
-    min-height: 50%;
-  }
-  
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 50%;
-    padding: 20px;
-  }
-  
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  }
-  
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    background-image: url('c:\Users\hibaz\Desktop\Pair-Project-of-Girl\photos make up\PLP-Imagery_Cosmetics_Lips_Desktop_MCP_opt-2.webp');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100%;
+    /* Additional styles for your content */
+}
+
+
 :root {
     --main-color: #C4C4C4;
-    --body-bg: #EFD7E5;
+    --body-bg: #E7DAE2;
     --second-bg: #f5f5f5;
     --text-color: #757575;
     --text-white: #ffffff;
@@ -92,6 +87,29 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+.slide-img-col {
+    position: relative;
+    background-color: var(--second-bg);
+}
+
+.slide-img-wrapper {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.slide-img {
+    --size: 700px;
+    height: var(--size);
+    width: var(--size);
+    overflow: hidden;
+}
+
+.slide-img img {
+    max-width: 100%;
+    height: 100%;
+}
+
 
 .main-color {
     color: var(--main-color);
